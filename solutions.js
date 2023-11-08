@@ -19,7 +19,7 @@
 // capital letters.
 
 const checkPalindrome = (str) => {
-  str = str.toLowerCase().replace(/\W/g,"");
+  str = str.toLowerCase().replace(/\W/g, "");
   for (let i = 0; i < str.length; i += 1) {
     if (str[i] !== str[str.length - 1 - i]) {
       return `${str} is not a Palindrome`;
@@ -33,8 +33,25 @@ console.log(checkPalindrome("A MAN, a plan, a CANAL, pAnAmA"));
 console.log(checkPalindrome("RACEcar"));
 console.log(checkPalindrome("Anna"));
 console.log(checkPalindrome("GrandMa"));
-console.log(checkPalindrome("catNip"))
+console.log(checkPalindrome("catNip"));
 
 //=========================================
 // Sum Array
+//=========================================
+
+let sum = 0;
+
+const sumfunc = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(sum);
+  return sum;
+};
+
+sumfunc([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+sumfunc([2,4,6,8,-40,32]);
+
+//=========================================
+// 
 //=========================================
