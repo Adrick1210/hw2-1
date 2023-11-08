@@ -50,8 +50,32 @@ const sumfunc = (arr) => {
 };
 
 sumfunc([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // 55
-sumfunc([2,4,6,8,-40,32]); // 67
+sumfunc([2, 4, 6, 8, -40, 32]); // 67
 
 //=========================================
-// 
+// Prime Numbers
 //=========================================
+
+const isItPrime = (num) => {
+  if (num <= 1) return false;
+  for (let i = 2; i < Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return `${num} is not a prime number`;
+    }
+  }
+  return `${num} is a prime number`;
+};
+
+// console.log(isItPrime(95)); //false
+// console.log(isItPrime(64)); //false
+// console.log(isItPrime(5)); //true
+// console.log(isItPrime(10647)); //false
+// console.log(isItPrime(7)); //true
+
+const printPrime = (num) => {
+  for (let i = 2; i < num; i++) {
+    console.log(isItPrime(i));
+  }
+};
+
+printPrime(97); // should log everything that is and is not prime up to 97
