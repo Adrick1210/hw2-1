@@ -85,7 +85,7 @@
 //=========================================
 
 const randomMove = () => {
-  const choices = ["rock", "paper", "scissors"];
+  let choices = ["rock", "paper", "scissors"];
   let moves = Math.floor(Math.random() * choices.length);
   return moves;
 };
