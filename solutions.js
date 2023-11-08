@@ -27,13 +27,13 @@ const checkPalindrome = (str) => {
   }
   return `${str} is a Palindrome`;
 };
-console.log(checkPalindrome("RADAR"));
-console.log(checkPalindrome("mopar"));
-console.log(checkPalindrome("A MAN, a plan, a CANAL, pAnAmA"));
-console.log(checkPalindrome("RACEcar"));
-console.log(checkPalindrome("Anna"));
-console.log(checkPalindrome("GrandMa"));
-console.log(checkPalindrome("catNip"));
+console.log(checkPalindrome("RADAR")); // true
+console.log(checkPalindrome("mopar")); // false
+console.log(checkPalindrome("A MAN, a plan, a CANAL, pAnAmA")); // true
+console.log(checkPalindrome("RACEcar")); //true
+console.log(checkPalindrome("Anna")); // true
+console.log(checkPalindrome("GrandMa")); // false
+console.log(checkPalindrome("catNip")); // false
 
 //=========================================
 // Sum Array
@@ -49,8 +49,8 @@ const sumfunc = (arr) => {
   return sum;
 };
 
-sumfunc([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-sumfunc([2,4,6,8,-40,32]);
+sumfunc([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); // 55
+sumfunc([2,4,6,8,-40,32]); // 67
 
 //=========================================
 // 
